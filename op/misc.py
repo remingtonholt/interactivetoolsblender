@@ -83,7 +83,8 @@ class CSBevel(bpy.types.Operator):
 
         mode = itools.get_mode()
 
-        version =  bpy.app.version_string[:4]
+        version = f'{bpy.app.version[0]}.{bpy.app.version[1]}'
+
 
         if mode == 'VERT':
             if float(version) >= 2.90:
